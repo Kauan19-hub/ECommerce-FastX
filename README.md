@@ -1,1 +1,1 @@
-> Documentation n' code is being developed
+> Documentation n' code are being developed
