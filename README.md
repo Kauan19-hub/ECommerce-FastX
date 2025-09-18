@@ -1,4 +1,4 @@
-> Documentation n' code are being developed
+> Documentation n' code are being developed until December
 
 ---
 
@@ -58,3 +58,76 @@ FastX is an online website that connects consumers to automotive products in a s
 | White | `#FFFFFF`   | ⚪     | Clarity, simplicity, and transparency.               |
 
 ---
+
+**<h2>✅ Technical Requirements</h2>**
+
+###
+
+- `HTML5`, `CSS3`;
+- Visual Studio Code installed;
+- `Windows` | `macOS` | `Linux`.
+
+###
+
+**<h2>✅ Extras</h2>**
+
+###
+
+**Process Flow with Diagram**
+
+- From order placement to delivery;
+- From product entry into inventory to product review on the website.
+
+###
+
+**Security**
+
+###
+
+- Password protection;
+- Login system;
+- Best practices for handling sensitive data;
+
+###
+
+**Backups and Recovery**
+
+###
+
+- Deployment | `CI/CD`;
+
+###
+
+**Functional Requirements**
+
+###
+
+- User registration and login;
+- Product catalog;
+- Shopping cart;
+- Responsive design;
+- Payment methods;
+- Product and customer service reviews;
+- Target Audience.
+
+---
+
+**FastX's** target audience includes sports car enthusiasts, specialized workshops, collectors, and consumers looking for automotive customization. The typical age range is between **18** and **45** years old, with a strong interest in performance, style, and reliability in automotive parts.
+
+###
+
+<div align="left">
+  <img src="https://skillicons.dev/icons?i=html" height="30" alt="html5 logo" title="HTML5" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=css" height="30" alt="css logo" title="CSS3"  />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=vscode" height="30" alt="vscode logo" title="VS Code" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=git" height="30" alt="git logo" title="Git" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=github" height="30" alt="github logo" title="GitHub" />
+  <img width="2" />
+  <img src="https://skillicons.dev/icons?i=figma" height="30" alt="figma logo" title="Figma" />
+</div>
+
+###
