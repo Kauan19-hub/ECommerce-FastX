@@ -132,4 +132,4 @@ FastX is an online website that connects consumers to automotive products in a s
 
 ###
 ```powershell
-git clone https://github.com/Kauan19-hub/ECommerce-FastX.git
+git clone https://github.com/Kauan19-hub/ECommerce-FastX
