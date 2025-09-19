@@ -57,6 +57,14 @@ FastX is an online website that connects consumers to automotive products in a s
 | Black | `#000000`   | ⚫     | Strength, sophistication, and trust.                 |
 | White | `#FFFFFF`   | ⚪     | Clarity, simplicity, and transparency.               |
 
+###
+
+**<h2>4️⃣- Font Used</h2>**
+
+###
+
+`'Poppins', sans-serif`
+
 ---
 
 **<h2>✅ Technical Requirements</h2>**
