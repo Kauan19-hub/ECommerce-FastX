@@ -142,58 +142,58 @@ git clone https://github.com/Kauan19-hub/ECommerce-FastX
 
 ---
 
-```plaintext
+```pgsql
    👤 User
        │
        ▼
  ┌─────────────────────────────┐
- │      Front-End (UI)         │
- │  HTML + CSS                 │
- │  - Products Page            │
- │  - Shopping cart            │
+ │      Front-End (UI)                    │
+ │  HTML + CSS                            │
+ │  - Products Page                       │
+ │  - Shopping cart                       │
  └─────────────────────────────┘
        │   Navegation (Links, Botões)
        ▼
  ┌─────────────────────────────┐
- │      Product Page          │
- │  Displays product details  │
- │  "Add to Cart" button      │
+ │      Product Page                      │
+ │  Displays product details              │
+ │  "Add to Cart" button                  │
  └─────────────────────────────┘
        │   Click in button
        ▼
  ┌─────────────────────────────┐
- │     Shopping cart              │
- │  List of products in the cart  │
- │  - Button "Remove"             │
- │  - Button "Finally Shop"       │
+ │     Shopping cart                      │ 
+ │  List of products in the cart          │
+ │  - Button "Remove"                     │
+ │  - Button "Finally Shop"               │
  └─────────────────────────────┘
        │   Click in "Finally Shop"
        ▼
  ┌─────────────────────────────┐
- │      Confirmation Page      │
- │  Displays order summary     │
- │  - Delivery Address         │
- │  - Payment Options          │
+ │      Confirmation Page                 │
+ │  Displays order summary                │ 
+ │  - Delivery Address                    │
+ │  - Payment Options                     │
  └─────────────────────────────┘
        │   Click in "Confirm Shop"
        ▼
  ┌─────────────────────────────┐
- │     Success Page           │
- │  "Order Confirmed!"        │
- │  - Order details           │
+ │     Success Page                       │
+ │  "Order Confirmed!"                    │
+ │  - Order details                       │
  └─────────────────────────────┘
        │   Wait for delivery 
        ▼
  ┌─────────────────────────────┐
- │     Tracking Page           │  
- │  "Track your order"         │
- │  - Delivery Status          │
+ │     Tracking Page                      │  
+ │  "Track your order"                    │
+ │  - Delivery Status                     │
  └─────────────────────────────┘
        │   When order arrives 
        ▼
  ┌─────────────────────────────┐
- │    Avaliation Page          │
- │  - Avaliation From          │
+ │    Avaliation Page                     │
+ │  - Avaliation From                     │
  └─────────────────────────────┘
 ```
 
