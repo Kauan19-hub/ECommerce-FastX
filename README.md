@@ -137,21 +137,3 @@ FastX is an online website that connects consumers to automotive products in a s
 ```powershell
 git clone https://github.com/Kauan19-hub/ECommerce-FastX
 
-
-```mermaid
-flowchart TD
-    A[Cliente cria pedido] --> B[Verificar estoque de produtos]
-    B --> C{Produto disponível?}
-    C -->|Sim| D[Processar pagamento]
-    C -->|Não| E[Notificar cliente sobre falta de estoque]
-    D --> F[Preparar embalagem e envio]
-    F --> G[Envia pedido para o cliente]
-    G --> H[Aguardar confirmação de entrega]
-    H --> I{Entrega confirmada?}
-    I -->|Sim| J[Cliente avalia produto no site]
-    I -->|Não| K[Reenviar pedido ou corrigir problema de entrega]
-    J --> L[Finalizar pedido e agradecer pela avaliação]
-    K --> L
-    E --> L
-    L --> M[Fim do processo]
-
