@@ -142,7 +142,7 @@ git clone https://github.com/Kauan19-hub/ECommerce-FastX
 
 ---
 
-```pgsql 
+```plaintext
    👤 User
        │
        ▼
