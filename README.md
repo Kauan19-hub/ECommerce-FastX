@@ -136,6 +136,20 @@ FastX is an online website that connects consumers to automotive products in a s
 
 ###
 
+**Clone The Repository**
+
+###
+
+`poweshell`, `CMD`, `bash`
+
+###
+
+```powershell
+git clone https://github.com/Kauan19-hub/ECommerce-FastX
+```
+
+###
+
 <div align="left">
   <img src="https://skillicons.dev/icons?i=html" height="30" alt="html5 logo" title="HTML5" />
   <img width="2" />
@@ -150,15 +164,6 @@ FastX is an online website that connects consumers to automotive products in a s
   <img src="https://skillicons.dev/icons?i=figma" height="30" alt="figma logo" title="Figma" />
 </div>
 
-###
-
-`poweshell`, `CMD`, `bash`
-
-###
-
-```powershell
-git clone https://github.com/Kauan19-hub/ECommerce-FastX
-```
 
 ---
 
