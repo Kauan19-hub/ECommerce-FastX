@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --green: #1DB954;
+    --black: #000000;
+    --text: #FFFFFF;
+    --background: #4f6357;
+    --effects: #C0C0C0;
+
+}
+
+body {
+    background-color: var(--background);
+    color:  var(--text);
+      line-height: 1.5;
+
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+.navegation {
+    background-color: var(--background);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 11px;
+    
+}
+
+.navegation ul {
+    display:  flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.navegation a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color:  var(--text);
+    padding: 9px 10px;
+    transition: 0.5s;
+    
+}
+
+.navegation a::before, .navegation a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+    background-color: var(--green);
+    border-radius: 2px;
+
+}
+
+.navegation a::before {
+    left: 50%;
+
+}
+
+.navegation a::after {
+   right: 50%;
+    
+}
+
+.navegation a:hover {
+    color: var(--effects);
+
+}
+
+.navegation a:hover::before {
+    width: 50%;
+    left: 0;
+
+}
+
+ .navegation a:hover::after {
+    width: 50%;
+    right: 0;
+
+}
+
