@@ -138,6 +138,10 @@ FastX is an online website that connects consumers to automotive products in a s
   <a href="https://www.figma.com/design/N3BpjAGkye6sqXrBmAzTNd/Responsividade---FastX?node-id=0-1&p=f&t=DzQHfSNsqAibaeHQ-0">
     <img src="https://img.shields.io/badge/Responsiveness-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="25" alt="figma logo" title="Responsiveness" />
   </a>
+
+  <a href="https://www.figma.com/design/6UKCejM70Y7JmWdofEx8ON/Sem-t%C3%ADtulo?t=0rkTAe73L6147DQz-0">
+    <img src="https://img.shields.io/badge/Screens-F24E1E?logo=figma&logoColor=white&style=for-the-badge" height="25" alt="figma logo" title="Screens" />
+  </a>
 </div>
 
 ###
