@@ -46,21 +46,6 @@ FastX is an online website that connects consumers to automotive products in a s
 
 ###
 
-**<h2>3️⃣- Color Palette</h2>**
-
-###
-
-
-| Color | Hexadecimal                       | Visual  | Meaning                                             |
-|-------|-----------------------------------|---------|-----------------------------------------------------|
-| Green | `#1DB954`, `#4F6357`, `#98DB46`   | 🟢      | Innovation, sustainability, and automotive efficiency. |
-| Black | `#000000`                         | ⚫     | Strength, sophistication, and trust.                 |
-| White | `#FFFFFF`                         | ⚪     | Clarity, simplicity, and transparency.               |
-| Silver| `#C0C0C0`, `#505050`, `#CACACA`   | 🔘     | Neutrality and elegance.                             |
-
-
-###
-
 **<h2>4️⃣- Font Used</h2>**
 
 ###
