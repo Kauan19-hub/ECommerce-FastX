@@ -21,7 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: var(--background);
+    background-color: var(--black);
 
 }
 
@@ -100,7 +100,7 @@ body {
 .container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid var(--effects);
+    border: 2px solid var(--green);
     border-radius: 15px;
     color: var(--text);
     box-shadow: 0 0 10px rgba(0, 0, 0.2);
@@ -128,6 +128,7 @@ body {
     text-align: center;
     font-size: 36px;
     color: var(--green);
+    text-transform: uppercase;
     
 }
 
@@ -167,7 +168,8 @@ body {
 }
 
 .input-box input:hover {
-    box-shadow: 0 0 13px var(--green);
+    box-shadow: 0 0 15px var(--green);
+    border-color: var(--green);
 
 }
 
@@ -211,7 +213,10 @@ body {
 }
 
 .enter:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
+    color: var(--green);
+    background-color: var(--text);
+
 }
 
 .register a {
@@ -223,6 +228,13 @@ body {
 .register a:hover {
     color: var(--green);
     text-decoration: underline;
+
 }
 
+.img-person img {
+    display: flex;
+    width: 390px;
+    margin: 39px;
+    animation: exibicao 1s ease-out
 
+}
