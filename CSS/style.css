@@ -19,7 +19,7 @@ body {
   color: var(--text);
   line-height: 1.5;
   overflow-x: hidden;
-
+  
 }
 
 .hero {
@@ -113,13 +113,6 @@ body {
 .navegation a:hover::after {
   width: 50%;
   right: 0;
-
-}
-
-.logo-icon img {
-  display: flex;
-  width: 120px;
-  margin: 2px;
 
 }
 
