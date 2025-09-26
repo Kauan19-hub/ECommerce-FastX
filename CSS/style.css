@@ -12,6 +12,7 @@
   --text: #ffffff;
   --background: #4f6357;
   --effects: #c0c0c0;
+  --silver: #8c8c8c;
 
 }
 
@@ -165,6 +166,75 @@ body {
 .buttom:hover {
   color: var(--green);
   background-color: var(--text);
+  cursor: pointer;
+
+}
+
+footer {
+  display: flex;
+  color: var(--text);
+  background-color: var(--silver);
+  padding: 40px 20px;
+  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+
+}
+
+.column h2 {
+  margin-bottom: 10px;
+
+}
+.column ul {
+  padding: 0;
+  list-style: none;
+
+}
+
+.column ul li {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--text);
+
+}
+
+.column ul li:hover {
+  color: var(--background);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 39px;
+  padding-top: 20px;
+
+}
+
+.logo {
+  font-size: 19px;
+
+}
+
+.networks i {
+  width: 23px;
+  margin-left: 10px;
+  margin-top:43px;
+  padding: 18px;
+  justify-content: space-between;
+  transition: 0.2s;
+  font-size: 1.4rem;
+ 
+}
+
+.networks i:hover {
+  color: var(--background);
   cursor: pointer;
 
 }
