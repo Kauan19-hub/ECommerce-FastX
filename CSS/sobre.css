@@ -94,6 +94,26 @@ body {
 
 }
 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 14%;
+    min-height: 100vh;
+
+}
+
+header .title {
+    max-width: 900px;
+
+}
+
+header .title p {
+    text-align: justify;
+    margin-bottom: 19px;
+}
+
 .title h2 {
     color: var(--black);
     text-transform: uppercase;
@@ -135,7 +155,7 @@ p {
 .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 60px 20px;
     justify-content: center;
     gap: 30px;
 
@@ -145,15 +165,38 @@ p {
     border-radius: 22px;
     background-color: var(--background);
     transition: 0.4s ease;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 298px;
 
+}
+
+.box .meet {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    color: var(--text);
+    background-color: var(--green);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+    border-radius: 0 0 21px 22px;
+    
 }
 
 .box:hover {
     transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.29);
     cursor: pointer;
     
-
 }
+
+a {
+    text-decoration: none;
+}
+
 
 
 
