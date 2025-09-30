@@ -111,7 +111,7 @@ FastX is an online website that connects consumers to automotive products in a s
 
 ###
 
-**<h2>✅ Logo FastX</h2>**
+**<h2>✅ Figma FastX</h2>**
 
 ###
 
