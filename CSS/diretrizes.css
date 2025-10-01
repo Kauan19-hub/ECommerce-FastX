@@ -7,7 +7,7 @@
 }
 
 :root {
-    --green: #1db954;
+    --green: #327549;
     --black: #000000;
     --text: #ffffff;
     --background: #4f6357;
@@ -65,7 +65,6 @@ body {
     width: 0;
     height: 2px;
     bottom: 0;
-    height: 2px;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
     background-color: var(--green);
     border-radius: 2px;
