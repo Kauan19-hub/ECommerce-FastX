@@ -230,11 +230,3 @@ body {
     text-decoration: underline;
 
 }
-
-.img-person img {
-    display: flex;
-    width: 390px;
-    margin: 39px;
-    animation: exibicao 1s ease-out
-
-}
