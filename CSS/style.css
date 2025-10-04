@@ -7,7 +7,7 @@
 }
 
 :root {
-  --green: #327549;
+  --green: #1DB954;
   --black: #000000;
   --text: #ffffff;
   --background: #4f6357;
@@ -26,7 +26,7 @@ body {
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: url(/Images/R.jfif.jpg);
+  background-image: url(/Images/Car4.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -155,7 +155,7 @@ body {
   display: inline-block;
   padding: 11px 22px;
   color: var(--text);
-  background-color: var(--green);
+  background-color: var(--background);
   text-decoration: none;
   border-radius: 37px;
   transition: 0.3s;

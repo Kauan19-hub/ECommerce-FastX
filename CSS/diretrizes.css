@@ -7,7 +7,7 @@
 }
 
 :root {
-    --green: #327549;
+    --green: #1DB954;
     --black: #000000;
     --text: #ffffff;
     --background: #4f6357;
@@ -18,7 +18,8 @@
 body {
     line-height: 1.5;
     overflow-x: hidden;
-    background-color: var(--text);
+    background-color: var(--black);
+    color: var(--text);
 
 }
 
@@ -50,7 +51,7 @@ body {
 .navegation a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--black);
+    color: var(--text);
     padding: 4px 13px;
     position: relative;
     transition: 0.5s;
@@ -93,4 +94,77 @@ body {
 
 }
 
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Images/Car2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    z-index: 2;
 
+}
+
+.hero::before {
+    content: "";
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    position: absolute;
+
+}
+
+.hero * {
+    position: relative;
+    z-index: 2;
+
+}
+
+.hero .title {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin:  0 auto;
+    padding: 0 10px;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 30px;
+    border-radius: 6px;
+    border: 4px solid var(--green);
+
+}
+
+.hero .title p {
+    text-align: justify;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 18px;
+    margin-top: 14px;
+    padding: 0;
+
+}
+
+.hero .title h2 {
+    color: var(--text);
+    text-transform: uppercase;
+    padding: 0;
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+
+}
+
+.hero .title span {
+    color: var(--green);
+    font-weight: 700;
+
+}

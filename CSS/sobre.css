@@ -7,7 +7,7 @@
 }
 
 :root {
-    --green: #327549;
+    --green: #1DB954;
     --black: #000000;
     --text: #ffffff;
     --background: #4f6357;
@@ -163,7 +163,7 @@ p {
 
 .box {
     border-radius: 22px;
-    background-color: var(--green);
+    background-color: var(--background);
     transition: 0.4s ease;
     overflow: hidden;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -178,7 +178,7 @@ p {
     width: 100%;
     border: none;
     color: var(--text);
-    background-color: var(--green);
+    background-color: var(--background);
     font-size: 1rem;
     cursor: pointer;
     transition: 0.4s ease;
