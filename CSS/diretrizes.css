@@ -12,6 +12,7 @@
     --text: #ffffff;
     --background: #4f6357;
     --effects: #c0c0c0;
+    --blue: #0094f6;
 
 }
 
@@ -167,4 +168,14 @@ body {
     color: var(--green);
     font-weight: 700;
 
+}
+
+.see-more {
+    color: var(--blue);
+    text-decoration: none;
+
+}
+
+.see-more:hover {
+    text-decoration: underline;
 }
