@@ -12,13 +12,14 @@
     --text: #ffffff;
     --background: #4f6357;
     --effects: #c0c0c0;
+    --bgblue: #c7e0ff;
 
 }
 
 body {
     line-height: 1.5;
     overflow: hidden;
-    background-color: var(--text);
+    background-color: var(--bgblue);
 
 }
 
@@ -91,5 +92,17 @@ body {
 .navegation a:hover::after {
     width: 50%;
     right: 0;
+
+}
+
+.card {
+    border: none;
+    display: flex;
+    padding: 12px;
+    gap: 10px;
+    margin: 12px;
+    text-align: center;
+    border: 2px solid var(--green);
+    
 
 }

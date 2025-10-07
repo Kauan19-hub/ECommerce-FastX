@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/CSS/orcamento.css" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <title>FastX Company</title>
-  </head>
-  <body>
-    
-    <nav class="navegation">
-      <div class="menu_responsiveness">
-        <span></span>
-        <span></span>
-        <span></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/orcamento.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <title>FastX Company</title>
+</head>
+
+<body>
+
+  <nav class="navegation">
+    <div class="menu_responsiveness">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul>
+      <li class="navbox">
+        <a href="/HTML/sobre.html">Sobre o FastX</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="box">
+    <header class="buy">
+      <div class="title">
+        <h2>Comprar</h2>
+        <i class="fas fa-car"></i>
       </div>
+    </header>
 
-      <ul>
-        <li class="navbox">
-          <a href="/HTML/sobre.html">Sobre o FastX</a>
-        </li>
-      </ul>
-    </nav>
+    <section>
+      <main class="budget">
+        <h4>Orçamentos</h4>
+        <h2>$10.000.000,00</h2>
 
-  </body>
+        <div class="radio">
+          <input type="radio" class="input">À vista</input>
+          <input type="radio" class="input">Financiamento</input>
+          <input type="radio" class="input">Parcelamento</input>
+        </div>
+
+        <select class="cars">
+          <option value="">Selecione o Carro</option>
+          <option value="1.900.870,00">Fúlgor 911 - 2025 0KM - 1200CV: $1.900.870,00</option>
+          <option value="980.705,00">Velvet R5 - 2023 0KM - 990CV: $980.705,00</option>
+          <option value="8.790.478,00">Vortex Turbo RX7 - 2026 0KM - 1500CV: $8.790.478,00</option>
+          <option value="678.900,00">Vanguard T-500 2026 0KM - 899CV: $678.900,00</option>
+        </select>
+
+        <div class="payment">
+          <h3>Formas de Pagamento</h3>
+          <select class="pay">
+            <option value="">Forma de Pagamento</option>
+            <option value="credito">Cartão de Crédito</option>
+            <option value="debito">Cartão de Débito</option>
+            <option value="pix">Pix</option>
+          </select>
+
+          <input type="text" class="card" placeholder="1234 5678 9012 3456">
+          <input type="text" class="card" placeholder="MM / AA">
+          <input type="text" class="card" placeholder="CVV">
+          <input type="text" class="card" placeholder="Nome do titular">
+
+          <a href="#" class="buttom">Comprar</a>
+
+        </div>
+      </main>
+    </section>
+  </div>
+
+</body>
 </html>
