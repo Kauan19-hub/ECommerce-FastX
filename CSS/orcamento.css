@@ -20,7 +20,13 @@ body {
     line-height: 1.5;
     overflow: hidden;
     background-color: var(--bgblue);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    position: relative;
+ 
 }
 
 .menu_responsiveness {
@@ -95,14 +101,105 @@ body {
 
 }
 
-.card {
-    border: none;
-    display: flex;
-    padding: 12px;
-    gap: 10px;
-    margin: 12px;
-    text-align: center;
-    border: 2px solid var(--green);
-    
+.card, .pay, .cars {
+    width: 100%;
+    border: 1px solid var(--black);
+    border-radius: 7px;
+    margin-bottom: 12px;
+    padding: 10px;
 
 }
+
+.box  { 
+    max-width: 700px;
+    width: 90%;
+    border: 2px solid var(--black);
+    justify-content: center;
+    padding:  19px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: var(--text);
+
+}
+
+.title h2 i {
+    color: var(--text);
+    font-size: 25px;
+    margin-left: 11px;
+    
+}
+
+.budget  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    margin-top: 10px;
+
+}
+
+.orc {
+    color: #1fd41f;
+    font-weight: 600;
+    font-size: 28px;
+
+}
+
+.buttom  {
+    display: inline-block;
+    background-color: #1fd41f;
+    color: var(--text);
+    text-align: center;
+    border-radius: 7px;
+    padding: 11px 36px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+    margin-top: 10px;
+
+}
+
+.buttom:hover {
+    background-color: var(--green)
+
+}
+
+.payment  h3 {
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+
+}
+
+.radio {
+    flex-direction: column;
+    display: flex;
+    gap: 13px;
+    margin-top: 4px;
+
+}
+
+.radio  input {
+    vertical-align: middle;
+    margin-left: 8px;
+    margin-right: 11px;
+
+}
+
+.radio label {
+    display: flex;
+    font-size: 16px;
+    color: var(--black);
+    align-items: center;
+
+}
+
+.pay,
+.cars {
+    cursor: pointer;
+
+}
+
