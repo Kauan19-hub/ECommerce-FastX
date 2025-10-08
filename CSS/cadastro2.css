@@ -7,16 +7,16 @@
 }
 
 :root {
-    --green: #327549;
+    --green2: #327549;
     --black: #000000;
-    --text: #ffffff;
+    --white: #ffffff;
     --background: #4f6357;
     --effects: #c0c0c0;
 
 }
 
 body {
-    color: var(--text);
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +53,7 @@ body {
 .navegation a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--text);
+    color: var(--white);
     padding: 4px 13px;
     position: relative;
     transition: 0.5s;
@@ -70,7 +70,7 @@ body {
     bottom: 0;
     height: 2px;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green);
+    background-color: var(--green2);
     border-radius: 2px;
 
 }
@@ -100,9 +100,9 @@ body {
 .container {
     width: 420px;
     background-color: transparent;
-    border: 2px solid var(--green);
+    border: 2px solid var(--green2);
     border-radius: 15px;
-    color: var(--text);
+    color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0.2);
     padding: 30px 40px;
     animation: exibicao 1s ease-out
@@ -127,7 +127,7 @@ body {
 .container h1 {
     text-align: center;
     font-size: 36px;
-    color: var(--green);
+    color: var(--green2);
     text-transform: uppercase;
     
 }
@@ -143,11 +143,11 @@ body {
 .input-box input {
     width: 100%;
     height: 100%;
-    border: 2px solid var(--text);
+    border: 2px solid var(--white);
     outline: none;
     background-color: transparent;
     font-size: 15px;
-    color: var(--text);
+    color: var(--white);
     border-radius: 40px;
     padding: 20px 44px 20px 20px;
     transition: 0.5s;
@@ -155,7 +155,7 @@ body {
 }
 
 .input-box input::placeholder {
-    color: var(--text);
+    color: var(--white);
 
 }
 
@@ -168,8 +168,8 @@ body {
 }
 
 .input-box input:hover {
-    box-shadow: 0 0 15px var(--green);
-    border-color: var(--green);
+    box-shadow: 0 0 15px var(--green2);
+    border-color: var(--green2);
 
 }
 
@@ -180,32 +180,32 @@ body {
 }
 
 .remember label input {
-    accent-color: var(--text);
+    accent-color: var(--white);
     margin-right: 6px;
 
 }
 
 .remember a {
     text-decoration: none;
-    color: var(--text);
+    color: var(--white);
 
 }
 
 .remember a:hover {
     text-decoration: underline;
-    color: var(--green);
+    color: var(--green2);
 
 }
 
 .enter {
     width: 100%;
     height: 50px;
-    background-color: var(--green);
+    background-color: var(--green2);
     border: none;
     margin: 30px 2px;
     border-radius: 40px;
     cursor: pointer;
-    color: var(--text);
+    color: var(--white);
     font-size: 16px;
     font-weight: 600;
     transition: 0.4s;
@@ -214,19 +214,19 @@ body {
 
 .enter:hover {
     transform: scale(1.01);
-    color: var(--green);
-    background-color: var(--text);
+    color: var(--green2);
+    background-color: var(--white);
 
 }
 
 .register a {
-    color: var(--text);
+    color: var(--white);
     text-decoration: none;
 
 }
 
 .register a:hover {
-    color: var(--green);
+    color: var(--green2);
     text-decoration: underline;
 
 }
