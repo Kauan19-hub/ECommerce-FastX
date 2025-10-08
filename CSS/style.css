@@ -9,7 +9,7 @@
 :root {
   --green: #1DB954;
   --black: #000000;
-  --text: #ffffff;
+  --white: #ffffff;
   --background: #4f6357;
   --effects: #c0c0c0;
   --silver: #8c8c8c;
@@ -120,7 +120,7 @@ body {
 .title {
   position: fixed;
   text-align: center;
-  color: var(--text);
+  color: var(--white);
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -154,7 +154,7 @@ body {
 .buttom {
   display: inline-block;
   padding: 11px 22px;
-  color: var(--text);
+  color: var(--white);
   background-color: var(--background);
   text-decoration: none;
   border-radius: 37px;
@@ -166,14 +166,14 @@ body {
 
 .buttom:hover {
   color: var(--green);
-  background-color: var(--text);
+  background-color: var(--white);
   cursor: pointer;
 
 }
 
 footer {
   display: flex;
-  color: var(--text);
+  color: var(--white);
   background-color: var(--silver);
   padding: 40px 20px;
   text-align: center;
@@ -201,7 +201,7 @@ footer {
 .column ul li {
   margin-bottom: 10px;
   text-decoration: none;
-  color: var(--text);
+  color: var(--white);
 
 }
 
