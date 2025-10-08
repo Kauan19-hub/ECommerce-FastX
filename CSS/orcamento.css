@@ -9,17 +9,18 @@
 :root {
     --green: #327549;
     --black: #000000;
-    --text: #ffffff;
-    --background: #4f6357;
+    --white: #ffffff;
     --effects: #c0c0c0;
-    --bgblue: #c7e0ff;
+    --bg: #c7e0ff;
+    --orc: #1fd41f;
+    --btn: #1fd41f;
 
 }
 
 body {
     line-height: 1.5;
     overflow: hidden;
-    background-color: var(--bgblue);
+    background-color: var(--bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,7 +75,7 @@ body {
     height: 2px;
     bottom: 0;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green);
+    background-color: var(--green2);
     border-radius: 2px;
 
 }
@@ -142,7 +143,7 @@ body {
 }
 
 .orc {
-    color: #1fd41f;
+    color: var(--orc);
     font-weight: 600;
     font-size: 28px;
 
@@ -150,7 +151,7 @@ body {
 
 .buttom  {
     display: inline-block;
-    background-color: #1fd41f;
+    background-color: var(--btn);
     color: var(--text);
     text-align: center;
     border-radius: 7px;
@@ -163,7 +164,7 @@ body {
 }
 
 .buttom:hover {
-    background-color: var(--green)
+    background-color: var(--green2)
 
 }
 
