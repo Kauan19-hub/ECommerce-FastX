@@ -122,12 +122,12 @@ body {
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 10px;
-    background-color: var(--text);
+    background-color: var(--white);
 
 }
 
 .title h2 i {
-    color: var(--text);
+    color: var(--white);
     font-size: 25px;
     margin-left: 11px;
     
@@ -152,7 +152,7 @@ body {
 .buttom  {
     display: inline-block;
     background-color: var(--btn);
-    color: var(--text);
+    color: var(--white);
     text-align: center;
     border-radius: 7px;
     padding: 11px 36px;
@@ -168,7 +168,7 @@ body {
 
 }
 
-.payment  h3 {
+.payment h3 {
     flex-direction: column;
     display: flex;
     gap: 8px;
