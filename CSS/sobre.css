@@ -9,7 +9,7 @@
 :root {
     --green: #1DB954;
     --black: #000000;
-    --text: #ffffff;
+    --white: #ffffff;
     --background: #4f6357;
     --effects: #c0c0c0;
 
@@ -18,7 +18,7 @@
 body {
     line-height: 1.5;
     overflow-x: hidden;
-    background-color: var(--text);
+    background-color: var(--white);
 
 }
 
@@ -138,7 +138,7 @@ p {
 }
 
 .comment {
-    color:  #4f6357;
+    color: var(--background);
 }
 
 .img img {
@@ -149,7 +149,6 @@ p {
     object-fit: cover;
     justify-content: space-between;
 
-    
 }
 
 .container {
@@ -177,7 +176,7 @@ p {
     padding: 14px;
     width: 100%;
     border: none;
-    color: var(--text);
+    color: var(--white);
     background-color: var(--background);
     font-size: 1rem;
     cursor: pointer;
