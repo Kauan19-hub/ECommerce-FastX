@@ -1,4 +1,4 @@
-> Documentation n' code are being developed until December
+> Documentation n' code are being developed until November 19th
 
 ---
 
