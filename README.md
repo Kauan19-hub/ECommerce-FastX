@@ -117,15 +117,19 @@ FastX is an online website that connects consumers to automotive products in a s
 
 <div align="left">
   <a href="https://www.figma.com/design/wiG8ApPUxmP2CGeRMOZA44/Sem-t%C3%ADtulo?node-id=0-1&p=f&t=Jo5Gy3DlvaEOuKme-0">
-    <img src="https://img.shields.io/badge/Logo-5ccb5f?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Logo" />
+    <img src="https://img.shields.io/badge/Logo-06402B?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Logo" />
   </a>
 
   <a href="https://www.figma.com/design/N3BpjAGkye6sqXrBmAzTNd/Responsividade---FastX?node-id=0-1&p=f&t=DzQHfSNsqAibaeHQ-0">
-    <img src="https://img.shields.io/badge/Responsiveness-5ccb5f?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Responsiveness" />
+    <img src="https://img.shields.io/badge/Responsiveness-06402B?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Responsiveness" />
   </a>
 
   <a href="https://www.figma.com/design/6UKCejM70Y7JmWdofEx8ON/Sem-t%C3%ADtulo?t=0rkTAe73L6147DQz-0">
-    <img src="https://img.shields.io/badge/Screens-5ccb5f?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Screens" />
+    <img src="https://img.shields.io/badge/Screens-06402B?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Screens" />
+  </a>
+
+  <a href="https://www.figma.com/design/kvd750ZwHy4EgSWgULjPQ3/Paleta-de-Cores-%7C-E-Commerce?t=15NHsee7WV1JPlF5-0">
+    <img src="https://img.shields.io/badge/Colors Palete-06402B?logo=figma&logoColor=ffffff&style=for-the-badge" height="25" alt="figma logo" title="Colors Palete" />
   </a>
 </div>
 
