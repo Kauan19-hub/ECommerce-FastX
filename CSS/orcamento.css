@@ -7,7 +7,7 @@
 }
 
 :root {
-    --green: #327549;
+    --green2: #327549;
     --black: #000000;
     --white: #ffffff;
     --bg: #c7e0ff;
@@ -163,7 +163,8 @@ body {
 }
 
 .buttom:hover {
-    background-color: var(--green2)
+    background-color: var(--green2);
+  
 
 }
 
