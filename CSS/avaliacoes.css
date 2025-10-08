@@ -7,9 +7,9 @@
 }
 
 :root {
-    --green: #327549;
+    --green2: #327549;
     --black: #000000;
-    --text: #ffffff;
+    --white: #ffffff;
     --background: #4f6357;
     --effects: #c0c0c0;
 
@@ -18,7 +18,7 @@
 body {
     line-height: 1.5;
     overflow: hidden;
-    background-color: var(--text);
+    background-color: var(--white);
 
 }
 
@@ -67,7 +67,7 @@ body {
     height: 2px;
     bottom: 0;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green);
+    background-color: var(--green2);
     border-radius: 2px;
 
 }
