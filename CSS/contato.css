@@ -7,7 +7,8 @@
 }
 
 :root {
-    --green: #327549;
+    --green: #1DB954;
+    --green2: #327549;
     --black: #000000;
     --white: #ffffff;
     --background: #4f6357;
@@ -18,6 +19,19 @@ body {
     line-height: 1.5;
     overflow-x: hidden;
     background-color: var(--white);
+
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    right: -9%;
+    top: 0;
+    width: 64%;
+    height: 100%;
+    background-color: var(--background);
+    border-bottom-left-radius: 50%;
+    z-index: 1;
 
 }
 
@@ -50,7 +64,7 @@ body {
 .navegation a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--black);
+    color: var(--white);
     padding: 4px 13px;
     position: relative;
     transition: 0.5s;
@@ -94,5 +108,118 @@ body {
 
 }
 
+.title {
+    padding: 10px 3px;
+    margin: 38px;
+}
 
+.title h2 {
+    font-size: 2rem;
+
+}
+
+.title span {
+    color: var(--green);
+
+}
+
+.contact {
+    display: flex;
+    margin: 42px;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.contact input {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    transition: 0.3s;
+    width: 35%;
+
+}
+
+.contact input:hover {
+    border-color: var(--green);
+
+}
+
+.contact label {
+    margin-bottom: 10px;
+    margin: 2px;
+
+}
+
+.inputMsg {
+    display: flex;
+    margin: 42px;
+    flex-direction: column;
+    margin-bottom: 40px;
+
+}
+
+.inputMsg textarea {
+    padding: 15px;
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    transition: 0.3s;
+    height: 200px;
+    resize: none;
+    width: 35%;
+
+}
+
+.inputMsg label {
+    margin-bottom: 10px;
+    margin: 2px;
+
+}
+
+.inputMsg textarea:hover {
+    border-color: var(--green);
+
+}
+
+.chooseContact {
+    display: flex;
+    margin: 43px;
+    padding: 10px;
+    border: 2px solid var(--black);
+    border-radius: 15px;
+    background-color: var(--white);
+    color: var(--black);
+    width: 10%;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.chooseContact:hover {
+    border-color: var(--green);
+    
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 43px;
+    text-decoration: none;
+    width: 34%;
+    border-radius: 33px;
+    padding: 14px;
+    background-color: var(--green2);
+    color: var(--white);
+    margin-bottom: 2px;
+    font-weight: bold;
+    transition: 0.3s;
+
+}
+
+.button:hover {
+    transform: scale(1.02);
+
+}
 
