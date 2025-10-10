@@ -48,7 +48,7 @@ body::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 1px 30px;
     backdrop-filter: blur(3px);
 
 }
@@ -108,8 +108,15 @@ body::before {
 
 }
 
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+
+}
+
 .title {
-    padding: 10px 3px;
+    padding: 20px 3px;
     margin: 38px;
 }
 

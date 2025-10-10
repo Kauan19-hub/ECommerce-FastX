@@ -37,7 +37,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 1px 30px;
     backdrop-filter: blur(3px);
 
 }
@@ -94,6 +94,13 @@ body {
 .navegation a:hover::after {
     width: 50%;
     right: 0;
+
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 
 }
 
