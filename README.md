@@ -46,7 +46,19 @@ FastX is an online website that connects consumers to automotive products in a s
 
 ###
 
-**<h2>4️⃣- Font Used</h2>**
+**<h2>4️⃣- Why FastX?</h2>**
+
+###
+
+**FastX** means **Fast EXperience**.
+The word **FAST** comes from speed — everything that represents sports cars and agility: fast deliveries, quick processing, and the thrill of velocity that cars convey.
+
+The **X** is a **strong symbol**, representing the **eXperience** of our team, **eXclusivity**, **technology**, and **futurism**.
+A three-in-one brand that sounds premium, automotive, and digital at the same time.
+
+###
+
+**<h2>5️⃣- Font Used</h2>**
 
 ###
 
@@ -59,7 +71,7 @@ FastX is an online website that connects consumers to automotive products in a s
 ###
 
 - `HTML5`, `CSS3`;
-- Visual Studio Code installed;
+- Visual Studio Code and Live Serves installed;
 - `Windows` | `macOS` | `Linux`.
 
 ###
