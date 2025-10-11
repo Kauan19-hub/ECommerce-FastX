@@ -8,12 +8,13 @@
 
 :root {
     --green2: #327549;
+    --green: #1DB954;
     --black: #000000;
     --white: #ffffff;
     --bg: #c7e0ff;
     --orc: #1fd41f;
     --btn: #1fd41f;
-
+    
 }
 
 body {
@@ -75,7 +76,7 @@ body {
     height: 2px;
     bottom: 0;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green2);
+    background-color: var(--green);
     border-radius: 2px;
 
 }
@@ -93,13 +94,20 @@ body {
 .navegation a:hover::before {
     width: 50%;
     left: 0;
-
+    
 }
 
 .navegation a:hover::after {
     width: 50%;
     right: 0;
+    
+}
 
+.title h2 i {
+    color: var(--white);
+    font-size: 25px;
+    margin-left: 11px;
+    
 }
 
 .logo {
@@ -133,12 +141,6 @@ body {
 
 }
 
-.title h2 i {
-    color: var(--white);
-    font-size: 25px;
-    margin-left: 11px;
-    
-}
 
 .budget  {
     display: grid;
@@ -146,7 +148,7 @@ body {
     align-items: start;
     gap: 40px;
     margin-top: 10px;
-
+    
 }
 
 .orc {
@@ -156,7 +158,7 @@ body {
 
 }
 
-.buttom  {
+.button  {
     display: inline-block;
     background-color: var(--btn);
     color: var(--white);
@@ -170,10 +172,10 @@ body {
 
 }
 
-.buttom:hover {
+.button:hover {
     background-color: var(--green2);
   
-
+    
 }
 
 .payment h3 {
@@ -195,7 +197,7 @@ body {
 .radio  input {
     vertical-align: middle;
     margin-left: 8px;
-    margin-right: 11px;
+    margin: 0 11px 0 8px;
 
 }
 
@@ -206,10 +208,3 @@ body {
     align-items: center;
 
 }
-
-.pay,
-.cars {
-    cursor: pointer;
-
-}
-

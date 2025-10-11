@@ -54,7 +54,6 @@ body {
     padding: 4px 13px;
     position: relative;
     transition: 0.5s;
-    margin: 0; 
 
 }
 
@@ -107,24 +106,13 @@ header {
     justify-content: center;
     text-align: center;
     padding: 0 14%;
-    min-height: 100vh;
 
-}
-
-header .title {
-    max-width: 900px;
-
-}
-
-header .title p {
-    text-align: justify;
-    margin-bottom: 19px;
 }
 
 .title h2 {
     color: var(--black);
     text-transform: uppercase;
-    margin: 10px;
+    margin: 14px;
     padding: 79px 25px;
     font-size: 2rem;
 
@@ -134,7 +122,6 @@ header .title p {
     color: var(--green);
     text-transform: uppercase;
     font-weight: 700;
-    font-family: sans-serif;
 
 }
 
@@ -148,25 +135,6 @@ p {
     color: var(--background);
 }
 
-.img img {
-    border-radius: 20px;
-    margin: 20px;
-    height: 190px;
-    width: 246px;
-    object-fit: cover;
-    justify-content: space-between;
-
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 60px 2px;
-    justify-content: center;
-    gap: 30px;
-
-}
-
 .box {
     border-radius: 22px;
     background-color: var(--background);
@@ -175,6 +143,16 @@ p {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
     max-width: 298px;
+
+}
+
+.box img {
+    border-radius: 20px;
+    margin: 20px;
+    height: 190px;
+    width: 246px;
+    object-fit: cover;
+    justify-content: space-between;
 
 }
 
@@ -199,6 +177,15 @@ p {
     
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 2px;
+    justify-content: center;
+    gap: 30px;
+
+}
+
 a {
     text-decoration: none;
 
@@ -217,3 +204,6 @@ a {
     
 }
 
+a {
+    text-decoration: none;
+}

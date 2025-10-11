@@ -37,7 +37,7 @@ body {
 }
 
 .hero::before {
-  content: " ";
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
@@ -51,76 +51,77 @@ body {
 }
 
 .navegation {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1px 30px;
-  backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 30px;
+    backdrop-filter: blur(3px);
 
 }
 
 .navegation ul {
-  display: flex;
-  list-style: none;
-  margin-left: auto;
-  gap: 30px;
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    gap: 30px;
 
 }
 
 .navegation a {
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: var(--white);
-  padding: 4px 13px;
-  position: relative;
-  transition: 0.5s;
-  margin: 0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--white);
+    padding: 4px 13px;
+    position: relative;
+    transition: 0.5s;
+    margin: 0; 
 
 }
 
 .navegation a::before,
 .navegation a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  bottom: 0;
-  transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-  background-color: var(--green);
-  border-radius: 2px;
-  
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    height: 2px;
+    transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
+    background-color: var(--green);
+    border-radius: 2px;
+
 }
 
 .navegation a::before {
-  left: 50%;
+    left: 50%
 
 }
 
 .navegation a::after {
-  right: 50%;
+    right: 50%;
 
 }
 
 .navegation a:hover::before {
-  width: 50%;
-  left: 0;
+    width: 50%;
+    left: 0;
 
 }
 
 .navegation a:hover::after {
-  width: 50%;
-  right: 0;
+    width: 50%;
+    right: 0;
 
 }
 
 .logo {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
 
 }
 
@@ -158,7 +159,7 @@ body {
 
 }
 
-.buttom {
+.button1 {
   display: inline-block;
   padding: 11px 22px;
   color: var(--white);
@@ -170,7 +171,7 @@ body {
 
 }
 
-.buttom:hover {
+.button1:hover {
   color: var(--background);
   background-color: var(--white);
   cursor: pointer;
@@ -206,7 +207,6 @@ footer {
 
 .column ul li {
   margin-bottom: 10px;
-  text-decoration: none;
   color: var(--white);
 
 }
@@ -215,7 +215,7 @@ footer {
   color: var(--background);
 }
 
-.bottom {
+.button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -232,7 +232,7 @@ footer {
 .networks i {
   width: 23px;
   margin-left: 10px;
-  margin-top:43px;
+  margin-top:40px;
   padding: 18px;
   justify-content: space-between;
   transition: 0.2s;

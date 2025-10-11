@@ -8,6 +8,7 @@
 
 :root {
     --green2: #327549;
+    --green: #1DB954;
     --black: #000000;
     --white: #ffffff;
     --background: #4f6357;
@@ -70,7 +71,7 @@ body {
     bottom: 0;
     height: 2px;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green2);
+    background-color: var(--green);
     border-radius: 2px;
 
 }

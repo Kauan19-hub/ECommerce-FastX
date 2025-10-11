@@ -8,6 +8,7 @@
 
 :root {
     --green2: #327549;
+    --green: #1DB954;
     --black: #000000;
     --white: #ffffff;
     --background: #4f6357;
@@ -53,7 +54,7 @@ body {
 .navegation a {
     text-decoration: none;
     font-size: 1.1rem;
-    color: var(--white);
+    color: var(--text);
     padding: 4px 13px;
     position: relative;
     transition: 0.5s;
@@ -70,7 +71,7 @@ body {
     bottom: 0;
     height: 2px;
     transition: width 0.4s ease, left 0.4s ease, right 0.4s ease;
-    background-color: var(--green2);
+    background-color: var(--green);
     border-radius: 2px;
 
 }
@@ -103,8 +104,6 @@ body {
     object-fit: cover;
 
 }
-
-
 
 .container {
     width: 420px;

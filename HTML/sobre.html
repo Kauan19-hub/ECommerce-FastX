@@ -21,23 +21,20 @@
       <span></span>
     </div>
 
-     <img src="/Logo2v/Logo1.png" alt="Black Logo" class="logo">
+    <img src="/Logo2v/Logo1.png" alt="Black Logo" class="logo">
 
     <ul>
-      <li class="navbox">
-        <a href="/HTML/index.html">Início</a>
-      </li>
-
-      <li class="navbox">
-        <a href="/HTML/diretrizes.html">Diretrizes</a>
-      </li>
-
+      <li class="navbox"><a href="/HTML/index.html">Início</a></li>
+      <li class="navbox"><a href="/HTML/diretrizes.html">Diretrizes</a></li>
     </ul>
   </nav>
 
-  <header>
-    <div class="title">
+  <header class="title">
       <h2>Nossa <span>História</span></h2>
+  </header>
+
+  <main>
+    <section>
       <p>
         Em uma pequena cidade no interior de Lemúria chamada Holândia (JK),
         cresce um garoto completamente apaixonado por velocidade.
@@ -45,7 +42,7 @@
         observando os carros esportivos que passavam pela estrada próximo à sua residência
         com o vento nos cabelos e o som dos motores esportivos como se fosse uma
         trilha sonora dos seus sonhos. Aos 18 anos, Atlas se mudou para Manturim levando
-        seu objetivo de estudar e se formar em engenharia mecânica. Ele trabalhou em oficinas, 
+        seu objetivo de estudar e se formar em engenharia mecânica. Ele trabalhou em oficinas,
         aprendeu com profissionais e, conforme os anos foram passando, conseguiu um
         emprego como Projetista jr em uma famosa fábrica de carros esportivos chamada 'Químera',
         mas o sonho de Atlas nunca foi apenas montar carros. Ele queria criar um templo para os
@@ -74,44 +71,38 @@
       </p>
 
       <p class="comment">
-        "A velocidade não singnifica alcançar a linha de chegada de forma <span>RÁPIDA</span>. É sobre sentir
+        "A velocidade não significa alcançar a linha de chegada de forma <span>RÁPIDA</span>. É sobre sentir
         cada segundo, como se fosse <span>ETERNO</span>."
       </p>
-    </div>
-  </header>
+    </section>
+  </main>
 
   <footer>
-
     <div class="img">
-        <div class="container">
-          <div class="box">
-            <img src="/Images/Car1.jpg" alt="BYD" />
-            <a href="/HTML/conheca.html">
-              <button onclick="window.location.href='#' " type="button" class="meet">Conheça Nossos Carros</button>
-            </a>
-          </div>
-
-          <div class="box">
-            <img src="/Images/Avaliação.jpg" alt="Avaliação" />
-            <a href="/HTML/avaliacoes.html">
-              <button onclick="window.location.href='#' " type="button" class="meet">Nossas Avaliações e Clientes</button>
-            </a> 
-          </div>
-          
-          <div class="box">
-            <img src="/Images/Car3.jpg" alt="Porsche" />
-            <a href="/HTML/orcamento.html">
-               <button onclick="window.location.href='#' " type="button" class="meet">Solicite um Orçamento</button>
-            </a>
-          </div>
+      <div class="container">
+        <div class="box">
+          <img src="/Images/Car1.jpg" alt="BYD" />
+          <a href="/HTML/conheca.html" class="meet">Conheça Nossos Carros</a>
         </div>
 
-        <div class="contact">
-          <a href="/HTML/contato.html" alt="WhatsApp">
-             <img src="/Images/contato.jpg" alt="Logo">
-          </a>
+        <div class="box">
+          <img src="/Images/Avaliação.jpg" alt="Avaliação" />
+          <a href="/HTML/avaliacoes.html" class="meet">Nossas Avaliações e Clientes</a>
         </div>
-    </footer>
 
-  </body>
-  </html>
+        <div class="box">
+          <img src="/Images/Car3.jpg" alt="Porsche" />
+          <a href="/HTML/orcamento.html" class="meet">Solicite um Orçamento</a>
+        </div>
+      </div>
+
+      <div class="contact">
+        <a href="/HTML/contato.html">
+          <img src="/Images/contato.jpg" alt="Logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

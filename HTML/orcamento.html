@@ -12,7 +12,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/LogoBarra/LogoBarra.png">
   <title>FastX Company</title>
 </head>
-
 <body>
 
   <nav class="navegation">
@@ -25,29 +24,25 @@
     <img src="/Logo2v/Logo1.png" alt="Black Logo" class="logo">
 
     <ul>
-      <li class="navbox">
-        <a href="/HTML/sobre.html">Sobre o FastX</a>
-      </li>
+      <li class="navbox"><a href="/HTML/sobre.html">Sobre o FastX</a></li>   
     </ul>
   </nav>
 
-  <div class="box">
+  <main class="box">
     <header class="buy">
-      <div class="title">
         <h2>Comprar</h2>
-      </div>
     </header>
 
-    <section>
-      <main class="budget">
+    <section class="budget">
         <h4>Orçamentos</h4>
         <h2 class="orc">$10.000.000,00</h2>
 
-        <div class="radio">
+        <fieldset class="radio">
+          <legend>Tipo de Pagamento</legend>
           <label><input type="radio" class="input">À vista</label>
           <label><input type="radio" class="input">Financiamento</label>
           <label><input type="radio" class="input">Parcelamento</label>
-        </div>
+        </fieldset>
 
         <select class="cars">
           <option value="">Selecione o Carro</option>
@@ -56,9 +51,11 @@
           <option value="8.790.478,00">Vortex Turbo RX7 - 2026 0KM - 1500CV: $8.790.478,00</option>
           <option value="678.900,00">Vanguard T-500 2026 0KM - 899CV: $678.900,00</option>
         </select>
+      </section>
 
-        <div class="payment">
+      <section class="payment">
           <h3>Formas de Pagamento</h3>
+
           <select class="pay">
             <option value="">Forma de Pagamento</option>
             <option value="credito">Cartão de Crédito</option>
@@ -66,17 +63,16 @@
             <option value="pix">Pix</option>
           </select>
 
-          <input type="text" class="card" placeholder="1234 5678 9012 3456">
-          <input type="text" class="card" placeholder="MM / AA">
-          <input type="text" class="card" placeholder="CVV">
-          <input type="text" class="card" placeholder="Nome do titular">
-
-          <a href="#" class="buttom">Comprar</a>
-
-        </div>
+          <form class="payment-form"action="#" method="post">
+             <input type="text" class="card" placeholder="1234 5678 9012 3456">
+             <input type="text" class="card" placeholder="MM / AA">
+             <input type="text" class="card" placeholder="CVV">
+             <input type="text" class="card" placeholder="Nome do titular">
+             
+            <a href="#" class="button">Comprar</a>
+          </form>
+        </section>
       </main>
-    </section>
-  </div>
-
+          
 </body>
 </html>
