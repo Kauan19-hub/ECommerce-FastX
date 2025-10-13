@@ -58,6 +58,10 @@ A three-in-one brand that sounds premium, automotive, and digital at the same ti
 
 ###
 
+> All cities, cars, and brands mentioned on the site have **fictitious** names!
+
+###
+
 **<h2>5️⃣- Font Used</h2>**
 
 ###
