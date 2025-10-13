@@ -12,11 +12,17 @@
     --black: #000000;
     --white: #ffffff;
     --background: #4f6357;
+    --blue: #0094f6;
+    --gray: #8c8c8c;
 
 }
 
 body {
     line-height: 1.5;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 100px;
+    display: flex;
     background-color: var(--white);
 
 }
@@ -101,10 +107,147 @@ body {
 
 }
 
-.images img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 19px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+    flex: 1;
+    padding-left: 20px;
+
+}
+
+.box-img {
+    background-color: var(--white);
+    border: 2px solid var(--black);
     border-radius: 10px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.9);
+    padding: 15px;
+    text-align: center;
+    transition: 0.4s;
+    cursor: pointer;
+
+}
+
+.box-img:hover {
+    transform: translateY(-5px);
+}
+
+.box-img img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid var(--black);
+
+}
+
+.box-img h2 {
+    font-size: 1.4rem;
+    margin: 10px 0 4px;
+    color: var(--green);
+
+}
+
+.box-img p {
+    color: var(--background);
+
+}
+
+.box-img span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--blue);
     
+}
+
+header {
+    display: flex;
+    padding: 20px 29px;
+
+}
+
+.filter, .remove-filter {
+    cursor: pointer;
+    margin: 1px 7px;
+
+}
+
+.filter:hover {
+    text-decoration: underline;
+
+}
+
+.remove-filter:hover {
+    text-decoration: underline;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 19px;
+
+}
+
+.buttons a {
+    background-color: var(--green2);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+}
+
+.copy {
+    text-align: center;
+    background-color: var(--gray);
+    color: var(--black);
+    font-size: 0.86rem;
+    padding: 5px;
+
+}
+
+.sidebar-filter {
+    width: 249px;
+    padding: 20px;
+    border-right: 1px solid var(--black);
+    height: 100%;
+    position: relative;
+
+}
+
+.sidebar-filter details {
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--green);
+    padding-bottom: 2px;
+
+}
+
+.sidebar-filter summary {
+    cursor: pointer;
+    padding: 1px 0;
+
+}
+
+.sidebar-filter label {
+    display: block;
+    cursor: pointer;
+    margin: 5px 0;
+
+}
+
+.sidebar-filter input[type="checkbox"] {
+    margin-right: 7px;
+
 }
