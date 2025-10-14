@@ -1,3 +1,5 @@
+@layer base, demo;
+
 * {
     margin: 0;
     padding: 0;
@@ -267,4 +269,57 @@ header {
     transform: scale(1.2);
     cursor: pointer;
 
+}
+
+/* Animação do slider infinito abaixo do site, que pausa ao passar o mouse por cima */
+@layer demo {
+    .carousel {
+        --items: 16;
+        --duration: 35s;
+        --item-width: 120px;
+        --item-height: 120px;
+        --gap: 2rem;
+
+        position: relative;
+        height: var(--item-height);
+        width: min(90vw, 1200px);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .carousel article {
+        display: flex;
+        gap: var(--gap);
+        animation: slide var(--duration) linear infinite;
+        
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+    
+        }
+    
+        100% {
+            transform: translateX(calc(-1 * (var(--item-width) + var(--gap)) * 16));
+    
+        }
+    }
+    
+    .carousel img {
+        height: var(--item-height);
+        width: var(--item-width);
+        object-fit: contain;
+
+    }
+    
+
+    /* Animação pausa ao passar o mouse por cima */
+    .carousel:hover article {
+        animation-play-state: paused;
+        
+    }
 }
