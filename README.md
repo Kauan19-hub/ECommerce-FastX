@@ -66,7 +66,7 @@ A three-in-one brand that sounds premium, automotive, and digital at the same ti
 
 ###
 
-`'Poppins', sans-serif`
+`'Poppins', sans-serif` | `bold`
 
 ---
 
