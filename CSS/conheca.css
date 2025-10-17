@@ -9,8 +9,8 @@
 }
 
 :root {
-    --green2: #327549;
     --green: #1DB954;
+    --green2: #327549;
     --black: #000000;
     --white: #ffffff;
     --background: #4f6357;
@@ -20,12 +20,13 @@
 }
 
 body {
-    line-height: 1.5;
-    flex-direction: column;
-    min-height: 100vh;
-    padding-top: 100px;
     display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
     background-color: var(--white);
+    padding-top: 100px;
+    overflow-x: hidden;
 
 }
 
@@ -57,13 +58,12 @@ body {
 }
 
 .navegation a {
+    position: relative;
     text-decoration: none;
     font-size: 1.1rem;
     color: var(--black);
     padding: 4px 13px;
-    position: relative;
     transition: 0.5s;
-    margin: 0;
 
 }
 
@@ -219,21 +219,27 @@ header {
     width: 250px;
     padding: 24px 20px;
     background-color: var(--white);
-    border-right: 2px solid var(--black);
     border-radius: 0 15px 15px 0;
-    height: 100%;
-    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
 
 }
 
 .sidebar-filter details {
     margin-bottom: 12px;
-    background-color: var(--background);
+    background: linear-gradient(135deg, var(--green2), var(--green));
     padding: 7px 11px;
-    border-radius: 7px;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: 0.3s ease;
     color: var(--white);
     border-bottom: 1px solid var(--green);
     
+}
+
+.sidebar-filter details[open] {
+    transform: scale(1.01);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.24);
 }
 
 .sidebar-filter details:not(:last-child) {
@@ -243,7 +249,10 @@ header {
 
 .sidebar-filter summary {
     cursor: pointer;
-    padding: 1px 0;
+    display: flex;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    padding: 2px 7px;
     color: var(--white);
     display: flex;
     justify-content: space-between;
@@ -251,19 +260,33 @@ header {
 
 }
 
+.sidebar-filter summary::after {
+    content: "▾";
+    transition: transform 0.3s ease;
+
+}
+
+.sidebar-filter details[open] summary::after {
+    transform: rotate(-180deg);
+
+}
+
 .sidebar-filter label {
     display: flex;
+    background-color: var(--gray);
+    border: 2px solid var(--green);
+    border-radius: 9px;
+    padding: 5px 10px;
     cursor: pointer;
     align-items: center;
     margin: 5px 0;
-    padding: 2px 5px;
-    border-radius: 7px;
+    gap: 7px;
 
 }
 
 .sidebar-filter input[type="checkbox"] {
     margin-right: 7px;
-    accent-color: var(--green);
+    accent-color: var(--white);
     transform: scale(1.2);
     cursor: pointer;
 
@@ -272,17 +295,16 @@ header {
 /* Animação do slider infinito abaixo do site, que pausa ao passar o mouse por cima */
 @layer demo {
     .carousel {
-        --items: 14;
         --duration: 35s;
+        --items: 14;
         --item-width: 120px;
         --item-height: 60px;
         --gap: 2rem;
 
         position: relative;
-        height: var(--item-height);
-        width: min(90vw, 1200px);
-        margin: 0 auto;
         display: flex;
+        height: var(--item-height);
+        width: 100vw;
         align-items: center;
         overflow: hidden;
         color: var(--gray);
@@ -322,15 +344,9 @@ header {
 
     /* Animação do slide infinito */
     @keyframes slide {
-        0% {
-            transform: translateX(0);
+        0% { transform: translateX(0); }
     
-        }
-    
-        100% {
-            transform: translateX(calc(-1 * (var(--item-width) + var(--gap)) * var(--items) / 2));
-    
-        }
+        100% { transform: translateX(calc(-1 * (var(--item-width) + var(--gap)) * var(--items) / 2)); }
     }
     
     .carousel p {
