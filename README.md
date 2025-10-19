@@ -1,7 +1,3 @@
-> This is being developed until November 19th
-
----
-
 **<h2>📘 E-Commerce Documentation</h2>**
 
 ###
