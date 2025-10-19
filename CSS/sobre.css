@@ -21,9 +21,107 @@ body {
 
 }
 
-.menu_responsiveness {
+.menu {
     display: none;
 
+}
+
+.menu_responsiveness {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+    
+}
+
+.menu_responsiveness span {
+    width: 26px;
+    height: 4px;
+    background-color: var(--black);
+    transition: 0.4s ease;
+
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+
+    }
+
+    .menu_responsiveness {
+        display: flex;
+
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 220px;
+        height: 100vh;
+        background-color: var(--black);
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+
+    }
+
+    .menu:checked ~ .nav {
+        left: 0;
+
+    }
+
+    .menu:checked ~ .menu_responsiveness span {
+        background-color: var(--white);
+    }
+
+    .nav li a {
+        font-size: 1.1rem;
+        color: var(--white);
+
+    }
+
+    .navegation {
+        padding: 10px 20px;
+        justify-content: center;
+
+    }
+
+    .title h2 {
+        font-size: 1.4rem;
+        padding: 60px 10px;
+
+    }
+
+    p {
+        padding: 20px;
+        font-size: 0.94rem;
+
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+
+    }
+    
+    .box {
+        max-width: 90%;
+
+    }
+
+    .contact img {
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+
+    }
 }
 
 .navegation {
@@ -44,7 +142,7 @@ body {
     list-style: none;
     margin-left: auto;
     gap: 30px;
-
+    
 }
 
 .navegation a {
@@ -201,4 +299,5 @@ a {
 
 a {
     text-decoration: none;
+
 }

@@ -43,12 +43,90 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-
+  
 }
 
 .menu_responsiveness {
     display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
 
+}
+
+.menu_responsiveness span {
+  width: 26px;
+  height: 4px;
+  background-color: var(--white);
+  transition: 0.3s ease;
+
+}
+
+.menu {
+  display: none;
+
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (max-width: 768px) {
+  .logo {
+    display: none;
+
+  }
+
+  .menu_responsiveness {
+    display: flex;
+
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 220px;
+    height: 100vh;
+    background-color: var(--black);
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+
+  }
+
+  .menu:checked ~ .nav {
+    left: 0;
+
+  }
+
+  .nav li a {
+    font-size: 1.1rem;
+    color: var(--white);
+
+  }
+
+  .navegation {
+    padding: 10px 20px;
+    justify-content: space-between;
+
+  }
+
+  .container {
+    padding: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+
+  .form input,
+  .form ::select,
+  .btn {
+    width: 90%;
+    max-width: 320px;
+    
+  }
 }
 
 .navegation {
@@ -118,6 +196,7 @@ body {
     right: 0;
 
 }
+
 
 .logo {
     width: 90px;
