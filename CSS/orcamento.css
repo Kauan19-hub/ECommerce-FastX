@@ -87,6 +87,7 @@ body {
 
     .menu:checked ~ .menu_responsiveness span {
         background-color: var(--white);
+        
     }
 
     .nav li a {

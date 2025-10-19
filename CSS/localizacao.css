@@ -17,15 +17,171 @@
 
 body {
     line-height: 1.5;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--bg);
     color: var(--white);
 
 }
 
-.menu_responsiveness {
+.menu {
     display: none;
 
+}
+
+.menu_responsiveness {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+
+}
+
+.menu_responsiveness span {
+    width: 26px;
+    height: 4px;
+    background-color: var(--black);
+    transition: 0.3s ease;
+
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+
+    }
+
+    .map {
+        display: block;
+        margin: 100px auto 0 auto;
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        max-width: 900px;
+        border: 3px solid var(--green);
+        border-radius: 11px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .menu_responsiveness {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+
+    }
+
+    .menu_responsiveness span {
+        width: 26px;
+        height: 5px;
+        background-color: var(--black);
+        transition: 0.4s ease;
+
+    }
+
+    .navegation ul {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 220px;
+        height: 100vh;
+        background-color: var(--black);
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+        transition: left 0.4s ease;
+        z-index: 1000;
+
+    }
+
+    .menu:checked ~ .nav {
+       left: 0;
+
+    }
+
+    .menu:checked ~ .menu_responsiveness span {
+        background-color: var(--white);
+        
+    }
+
+    .nav li a {
+        font-size: 1.1rem;
+        color: var(--white);
+
+    }
+
+    .navegation {
+        padding: 10px 20px;
+        justify-content: flex-end;
+
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        margin-top: 100px;
+
+    }
+
+    .map {
+        display: block;
+        margin: 100px auto 0 auto;
+        width: 100%;
+        aspect-ratio: 3 / 2;
+        max-width: 900px;
+        border: 3px solid var(--green);
+        border-radius: 11px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .float-button {
+        right: 10px;
+        top: auto;
+        bottom: 70px;
+        transform: none;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    .float-button .btn {
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        background: var(--white);
+
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 19px 0;
+        gap: 16px;
+
+    }
+
+    .btn-test a {
+        width: 90%;
+        font-size: 1rem;
+        padding: 12px;
+
+    }
+
+    .map {
+        aspect-ratio: 1 / 1;
+        border: 2px solid var(--green);
+        margin-top: 182px;
+
+    }
 }
 
 .navegation {
@@ -113,8 +269,10 @@ main {
 
 .map {
     display: block;
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    margin: 70px auto;
+    height: auto;
+    aspect-ratio: 16 / 9;
     border: 3px solid var(--green);
     border-radius: 10px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);

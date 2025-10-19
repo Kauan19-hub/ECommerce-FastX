@@ -35,8 +35,25 @@ body::before {
 
 }
 
+.menu {
+    display: none;
+
+}
+
 .menu_responsiveness {
     display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+
+}
+
+.menu_responsiveness span {
+    width: 26px;
+    height: 4px;
+    background-color: var(--black);
+    transition: 0.3s ease;
 
 }
 
