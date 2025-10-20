@@ -47,6 +47,75 @@ body {
 
 }
 
+/* Responsividade (IMPORTANTE) */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+
+    }
+
+    .menu_responsiveness {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+
+    }
+
+    .menu_responsiveness span {
+        width: 26px;
+        height: 5px;
+        background-color: var(--white);
+        transition: 0.4s ease;
+
+    }
+
+    .navegation ul {
+        display: none;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 220px;
+        height: 100vh;
+        background-color: var(--black);
+        border-right: 2px solid var(--white);
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+        transition: left 0.4s ease;
+        z-index: 1000;
+
+    }
+
+    .menu:checked ~ .nav {
+       left: 0;
+
+    }
+
+    .menu:checked ~ .menu_responsiveness span {
+        background-color: var(--white);
+        
+    }
+
+    .nav li a {
+        font-size: 1.1rem;
+        color: var(--white);
+
+    }
+
+    .navegation {
+        padding: 10px 20px;
+        justify-content: flex-end;
+
+    }
+
+}
+
 .navegation {
     position: fixed;
     top: 0;

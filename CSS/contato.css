@@ -57,6 +57,115 @@ body::before {
 
 }
 
+/* Responsividade (IMPORTANTE */
+@media (max-width: 768px) {
+    .logo {
+        display: none;
+        
+    }
+    
+    body::before {
+        display: none;
+
+    }
+
+     .menu_responsiveness {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+        z-index: 1001;
+
+    }
+
+    .menu_responsiveness span {
+        width: 26px;
+        height: 5px;
+        background-color: var(--black);
+        transition: 0.4s ease;
+
+    }
+
+     .navegation ul {
+        display: none;
+
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 220px;
+        height: 100vh;
+        background-color: var(--black);
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
+        transition: left 0.4s ease;
+        z-index: 1000;
+
+    }
+
+    .menu:checked ~ .nav {
+       left: 0;
+
+    }
+
+    .menu:checked ~ .menu_responsiveness span {
+        background-color: var(--white);
+        
+    }
+
+    .nav li a {
+        font-size: 1.1rem;
+        color: var(--white);
+
+    }
+
+    .navegation {
+        padding: 10px 20px;
+        justify-content: flex-end;
+
+    }
+
+
+    .title {
+        text-align: center;
+        
+    }
+
+    .title h2 {
+        font-size: 1.4rem;
+
+    }
+
+    .contact label,
+    .inputMsg label {
+        width: 90%;
+        max-width: 420%;
+        border-radius: 20px;
+        margin: 10px 0;
+        margin-bottom: 6px;
+
+    }
+    
+    .contact input,
+    .inputMsg textarea,
+    .chooseContact select,
+    .button {
+        width: 100%;
+        max-width: 700px;
+        padding: 15px;
+        border: 2px solid var(--black);
+        border-radius: 20px;
+        margin: 10px 0;
+        box-sizing: border-box;
+
+    }
+
+}
+
 .navegation {
     position: fixed;
     top: 0;
