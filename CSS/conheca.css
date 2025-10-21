@@ -54,6 +54,13 @@ body {
 
 /* Responsividade (IMPORTANTE */
 @media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 9px;
+
+    }
+
     .logo {
         display: none;
 
@@ -81,7 +88,7 @@ body {
 
     }
 
-    .nav {
+     .nav {
         position: fixed;
         top: 0;
         left: -100%;
@@ -97,25 +104,103 @@ body {
 
     }
 
-    .menu:checked ~ .nav {
+     .menu:checked ~ .nav {
        left: 0;
 
     }
 
-    .menu:checked ~ .menu_responsiveness span {
+     .menu:checked ~ .menu_responsiveness span {
         background-color: var(--white);
         
     }
 
-    .nav li a {
+     .nav li a {
         font-size: 1.1rem;
         color: var(--white);
 
     }
 
-    .navegation {
+     .navegation {
         padding: 10px 20px;
         justify-content: flex-end;
+
+    }
+
+     .sidebar-filter {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: none;
+        position: relative;
+        padding: 20px;
+
+    }
+
+     .sidebar-filter details {
+        background: linear-gradient(135deg, var(--green2), var(--green));
+        padding: 7px 11px;
+        border-radius: 10px;
+        color: var(--white);
+        border-bottom: 1px solid var(--green);
+        margin-bottom: 13px;
+        transition: 0.4s ease;
+
+    }
+
+     .sidebar-filter details[open] {
+        transform: scale(1.01);
+        box-shadow: 0 4px 13px rgba(0, 0, 0, 0.24);
+
+    }
+
+     .sidebar-filter summary {
+        cursor: pointer;
+        padding: 3px 7px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 10px;
+        color: var(--white);
+
+    }
+
+     .sidebar-filter summary::after {
+        content: "▾";
+        transition: transform 0.4s ease;
+
+    }
+
+     .sidebar-filter details[open] summary::after {
+        transform: rotate(-180deg);
+
+    }
+
+     .sidebar-filter input[type="checkbox"] {
+        accent-color: var(--white);
+        transform: scale(1.2);
+        margin-right: 7px;
+        cursor: pointer;
+
+    }
+
+     .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding-left: 0;
+        gap: 20px;
+
+    }
+
+     .buttons {
+        flex-direction: column;
+        padding: 30px 10px;
+
+    }
+
+     .buttons a {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
 
     }
 }
@@ -132,7 +217,6 @@ body {
     backdrop-filter: blur(3px);
 
 }
-
 
 .navegation ul {
     display: flex;
