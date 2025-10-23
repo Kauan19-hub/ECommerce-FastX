@@ -66,6 +66,11 @@ body {
 
     }
 
+    main .sidebar-filter {
+        display: none;
+
+    }
+
     .menu_responsiveness {
         display: flex;
         flex-direction: column;
@@ -109,11 +114,6 @@ body {
 
     }
 
-     .menu:checked ~ .menu_responsiveness span {
-        background-color: var(--white);
-        
-    }
-
      .nav li a {
         font-size: 1.1rem;
         color: var(--white);
@@ -126,73 +126,29 @@ body {
 
     }
 
-     .sidebar-filter {
-        width: 100%;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: none;
-        position: relative;
-        padding: 20px;
-
-    }
-
-     .sidebar-filter details {
-        background: linear-gradient(135deg, var(--green2), var(--green));
-        padding: 7px 11px;
-        border-radius: 10px;
-        color: var(--white);
-        border-bottom: 1px solid var(--green);
-        margin-bottom: 13px;
-        transition: 0.4s ease;
-
-    }
-
-     .sidebar-filter details[open] {
-        transform: scale(1.01);
-        box-shadow: 0 4px 13px rgba(0, 0, 0, 0.24);
-
-    }
-
-     .sidebar-filter summary {
-        cursor: pointer;
-        padding: 3px 7px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 10px;
-        color: var(--white);
-
-    }
-
-     .sidebar-filter summary::after {
-        content: "▾";
-        transition: transform 0.4s ease;
-
-    }
-
-     .sidebar-filter details[open] summary::after {
-        transform: rotate(-180deg);
-
-    }
-
-     .sidebar-filter input[type="checkbox"] {
-        accent-color: var(--white);
-        transform: scale(1.2);
-        margin-right: 7px;
-        cursor: pointer;
-
-    }
-
      .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        padding-left: 0;
-        gap: 20px;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 20px !important;
+        padding: 20px !important;
+
+
+    }
+
+    .box-img {
+        width: 100% !important;
+        max-width: 420px !important;
+
+    }
+
+    .box-img img {
+        width: 100% !important;
+        height: auto !important;
 
     }
 
      .buttons {
-        flex-direction: column;
         padding: 30px 10px;
 
     }
@@ -292,8 +248,8 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 19px;
-    flex: 1;
-    padding-left: 20px;
+    padding: 22px 180px;
+
 
 }
 
@@ -301,15 +257,10 @@ main {
     background-color: var(--white);
     border-radius: 10px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.4);
-    padding: 15px;
+    padding: 12px;
     text-align: center;
-    transition: 0.5s ease;
     cursor: pointer;
 
-}
-
-.box-img:hover {
-    transform: scale(1.01);
 }
 
 .box-img img {
@@ -385,24 +336,23 @@ header {
 }
 
 .sidebar-filter {
-    width: 250px;
+    width: 260px;
     padding: 24px 20px;
     background-color: var(--white);
-    border-radius: 0 15px 15px 0;
+    border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    position: sticky;
+    margin: 20px;
 
 }
 
 .sidebar-filter details {
     margin-bottom: 12px;
-    background: linear-gradient(135deg, var(--green2), var(--green));
+    background-color: var(--green2);
     padding: 7px 11px;
     border-radius: 9px;
     overflow: hidden;
     transition: 0.3s ease;
     color: var(--white);
-    border-bottom: 1px solid var(--green);
     
 }
 
@@ -443,7 +393,6 @@ header {
 .sidebar-filter label {
     display: flex;
     background-color: var(--gray);
-    border: 2px solid var(--green);
     border-radius: 9px;
     padding: 5px 10px;
     cursor: pointer;
