@@ -199,6 +199,14 @@ body {
     }
 }
 
+/* Responsividade (IMPORTANTE) */
+@media (min-width: 1025px) and (max-width: 1336px) {
+    .box {
+        transform: scale(0.90);
+
+    }
+}
+
 .navegation {
     position: fixed;
     top: 0;

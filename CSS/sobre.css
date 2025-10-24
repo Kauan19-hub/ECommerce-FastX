@@ -234,7 +234,7 @@ p {
 }
 
 .box {
-    border-radius: 22px;
+    border-radius: 30px;
     background-color: var(--background);
     transition: 0.4s ease;
     overflow: hidden;

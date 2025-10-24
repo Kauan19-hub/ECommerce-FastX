@@ -125,11 +125,60 @@ body {
     text-align: center;
     
   }
+}
 
-  footer {
-    display: none;
+/* Responsividade (IMPORTANTE) */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .title h2 {
+    font-size: 1.8rem;
 
   }
+
+  .title p {
+    font-size: 1rem;
+
+  }
+
+  .navegation ul {
+    gap: 20px;
+
+  }
+
+  .navegation a {
+    font-size: 1rem;
+
+  }
+
+  .hero {
+    background-attachment: scroll;
+
+  }
+
+  .button1 {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 30px 15px;
+
+  }
+
+  .container {
+    gap: 10px;
+
+  }
+
+  .networks i {
+    margin-top: 20px;
+    padding: 13px;
+    font-size: 1.3rem;
+    
+  } 
 }
 
 .logo-footer {

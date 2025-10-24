@@ -16,7 +16,6 @@
 
 body {
     line-height: 1.5;
-    overflow-x: hidden;
     background-color: var(--black);
     color: var(--white);
 
@@ -44,7 +43,7 @@ body {
 
 }
 
-/* Responsividade (IMPORTANTE */
+/* Responsividade (IMPORTANTE) */
 @media (max-width: 768px) {
     .logo {
         display: none;
@@ -136,6 +135,24 @@ body {
         font-size: 0.94rem;
         line-height: 1.4;
         text-align: left;
+
+    }
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (max-width: 1366px) {
+    .hero {
+        height: 80vh;
+
+    }
+
+    .hero .title h2 {
+        font-size: 2rem;
+
+    }
+
+    .hero .title p {
+        font-size: 1rem;
 
     }
 }

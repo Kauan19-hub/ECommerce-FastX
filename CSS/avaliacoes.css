@@ -44,7 +44,7 @@ body {
 
 }
 
-/* Responsividade (IMPORTANTE */
+/* Responsividade (IMPORTANTE) */
 @media (max-width: 768px) {
     .logo {
         display: none;
@@ -291,7 +291,6 @@ footer {
     border-radius: 9px;
     font-size: 1.5rem;
     text-decoration: none;
-    letter-spacing: 1px;
     transition: 0.4s;
 
 }

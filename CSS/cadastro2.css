@@ -123,51 +123,6 @@ body {
 }
 
 /* Responsividade (IMPORTANTE) */
-@media (min-width: 769px) and (max-width: 1024px) {
-    body {
-        flex-direction: column;
-        overflow: hidden;
-        padding: 40px 0;
-
-    }
-
-    .container {
-        width: 60%;
-        max-width: 600px;
-        padding: 25px 35px;
-
-    }
-
-    .container h1 {
-        font-size: 30px;
-
-    }
-
-    .input-box input {
-        height: 49px;
-        font-size: 15px;
-
-    }
-
-    .enter {
-        height: 49px;
-        font-size: 16px;
-
-    }
-
-    .navegation a {
-        font-size: 1rem;
-
-    }
-
-    .logo {
-        width: 70px;
-        height: 70px;
-
-    }
-}
-
-/* Responsividade (IMPORTANTE) */
 @media (min-width: 1025px) and (max-width: 1366px) {
     .container {
         width: 320px;

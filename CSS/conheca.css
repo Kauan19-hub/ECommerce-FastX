@@ -52,7 +52,7 @@ body {
 
 }
 
-/* Responsividade (IMPORTANTE */
+/* Responsividade (IMPORTANTE) */
 @media (max-width: 760px) {
     main {
         display: flex;
@@ -159,6 +159,11 @@ body {
         text-align: center;
 
     }
+
+     .menu:checked ~ .menu_responsiveness span {
+        background-color: var(--white);
+    
+     }
 }
 
 .navegation {

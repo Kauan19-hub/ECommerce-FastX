@@ -57,7 +57,7 @@ body::before {
 
 }
 
-/* Responsividade (IMPORTANTE */
+/* Responsividade (IMPORTANTE) */
 @media (max-width: 768px) {
     .logo {
         display: none;
@@ -137,6 +137,7 @@ body::before {
 
     .title h2 {
         font-size: 1.4rem;
+        text-align: center;
 
     }
 
@@ -152,16 +153,26 @@ body::before {
     
     .contact input,
     .inputMsg textarea,
-    .chooseContact select,
+    .chooseContact,
     .button {
-        width: 100%;
-        max-width: 700px;
-        padding: 15px;
-        border: 2px solid var(--black);
-        border-radius: 20px;
-        margin: 10px 0;
-        box-sizing: border-box;
+        max-width: 100%;
 
+    }
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .title h2 {
+        font-size: 1.8rem;
+
+    }
+
+    .contact input,
+    .inputMsg textarea,
+    .chooseContact,
+    .button {
+        max-width: 80%;
+        padding: 16px;
     }
 }
 
