@@ -12,6 +12,7 @@
 - Functional requirements;
 - Navigation;
 - Main topics;
+- Responsiveness
 - Final considerations.
 
 ###
