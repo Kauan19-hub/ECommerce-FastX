@@ -191,30 +191,15 @@ body {
 }
 
 .container {
-    width: 420px;
+    width: min(500px, 90%, 400px);
+    padding: clamp(15px, 4vw, 35px);
     background-color: transparent;
     border: 2px solid var(--green2);
     border-radius: 15px;
     color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0.2);
-    padding: 30px 40px;
-    animation: exibicao 1s ease-out
+    transform: scale(0.80)
 
-}
-
-/* Animação de exibição na tela */
-@keyframes exibicao {
-    from {
-        opacity: 0;
-        transform: translateY(49px); /* Começará de baixo no eixo Y, invisível */
-
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Terminará no meio no eixo Y, visível */
-
-    }
 }
 
 .container h1 {
@@ -269,12 +254,14 @@ body {
 .remember {
     display: flex;
     justify-content: space-between;
-
+    
 }
 
 .remember label input {
     accent-color: var(--white);
     margin-right: 6px;
+    cursor: pointer;
+  
 
 }
 
@@ -323,3 +310,4 @@ body {
     text-decoration: underline;
 
 }
+

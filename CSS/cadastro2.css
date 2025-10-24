@@ -19,6 +19,7 @@ body {
     color: var(--white);
     display: flex;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     min-height: 100vh;
     background-color: var(--black);
@@ -49,6 +50,11 @@ body {
 
 /* Responsividade (IMPORTANTE) */
 @media (max-width: 768px) {
+    body {
+        overflow: hidden;
+
+    }
+
     .logo {
         display: none;
 
@@ -73,6 +79,7 @@ body {
 
     .navegation ul {
         display: none;
+
     }
 
     .nav {
@@ -112,6 +119,94 @@ body {
         padding: 10px 20px;
         justify-content: flex-end;
 
+    }
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        flex-direction: column;
+        overflow: hidden;
+        padding: 40px 0;
+
+    }
+
+    .container {
+        width: 60%;
+        max-width: 600px;
+        padding: 25px 35px;
+
+    }
+
+    .container h1 {
+        font-size: 30px;
+
+    }
+
+    .input-box input {
+        height: 49px;
+        font-size: 15px;
+
+    }
+
+    .enter {
+        height: 49px;
+        font-size: 16px;
+
+    }
+
+    .navegation a {
+        font-size: 1rem;
+
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+
+    }
+}
+
+/* Responsividade (IMPORTANTE) */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .container {
+        width: 320px;
+        padding: 20px 30px;
+        overflow: hidden;
+        transform: scale(0.9);
+
+    }
+
+    .container h1 {
+        font-size: 26px;
+
+    }
+
+    .input-box input {
+        font-size: 14px;
+        padding: 16px 35px 15px 15px;
+
+    }
+
+    .enter {
+        height: 45px;
+        font-size: 0.95rem;
+
+    }
+
+    .navegation {
+        padding: 8px 30px;
+
+    }
+
+    .navegation a {
+        font-size: 0.95rem;
+
+    }
+
+    .logo {
+        width: 65px;
+        height: 65px;
     }
 }
 
@@ -191,35 +286,20 @@ body {
 }
 
 .container {
-    width: 420px;
+    width: min(410px, 90%, 400px);
+    padding: clamp(15px, 4vw, 35px);
     background-color: transparent;
     border: 2px solid var(--green2);
     border-radius: 15px;
     color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0.2);
-    padding: 30px 40px;
-    animation: exibicao 1s ease-out
+    transform: scale(0.65)
 
-}
-
-/* Animação de exibição na tela */
-@keyframes exibicao {
-    from {
-        opacity: 0;
-        transform: translateY(49px); /* Começará de baixo no eixo Y, invisível */
-
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0); /* Terminará no meio no eixo Y, visível */
-
-    }
 }
 
 .container h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
     color: var(--green2);
     text-transform: uppercase;
     
@@ -235,7 +315,7 @@ body {
 
 .input-box input {
     width: 100%;
-    height: 100%;
+    height: clamp(40px, 6vw, 50px);
     border: 2px solid var(--white);
     outline: none;
     background-color: transparent;
@@ -275,6 +355,7 @@ body {
 .remember label input {
     accent-color: var(--white);
     margin-right: 6px;
+    cursor: pointer;
 
 }
 
@@ -292,14 +373,14 @@ body {
 
 .enter {
     width: 100%;
-    height: 50px;
+    height: clamp(40px, 6vw, 50px);
+    font-size: clamp(0.9rem, 1.1vw, 1rem);
     background-color: var(--green2);
     border: none;
     margin: 30px 2px;
     border-radius: 40px;
     cursor: pointer;
     color: var(--white);
-    font-size: 16px;
     font-weight: 600;
     transition: 0.4s;
     
